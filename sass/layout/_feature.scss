@@ -1,0 +1,66 @@
+.feature {
+  padding: 60px 0 60px 0;
+}
+
+.feature__list {
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px;
+  }
+}
+
+.feature__item {
+  @media screen and (min-width: 768px) {
+    margin: 30px;
+    flex-basis: calc((100% - 2 * 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 30px;
+    flex-basis: calc((100% - 4 * 60px) / 4);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Иконка(ки) SVG */
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.feature__title {
+  margin: 0 0 10px 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-color-text;
+}
+
+.feature__text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-acent;
+}

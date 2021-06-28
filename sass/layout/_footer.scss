@@ -1,0 +1,18 @@
+.footer {
+  padding: 60px 0 60px 0;
+  background: #2f303a;
+}
+
+.block-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: baseline;
+  }
+}
